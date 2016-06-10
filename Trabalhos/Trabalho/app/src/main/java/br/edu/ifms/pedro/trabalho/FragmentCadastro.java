@@ -36,7 +36,7 @@ public class FragmentCadastro extends Fragment {
             // Fazer validação
 
             getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragmentTroco, FragmentTroco.newInstance())
+                    .replace(R.id.frameLayout, FragmentTroco.newInstance())
                     .addToBackStack(null)
                     .commit();
         }
