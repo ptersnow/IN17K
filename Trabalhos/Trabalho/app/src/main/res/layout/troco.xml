@@ -1,289 +1,386 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:padding="20dp"
+        >
 
     <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/scrollView" android:layout_above="@+id/button" android:layout_alignParentTop="true">
+            android:id="@+id/scrollView"
+            android:layout_above="@+id/buttonTrocoEnviar"
+            android:layout_alignParentTop="true"
+            >
+
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                >
+
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Moedas (R$)"
-                    android:id="@+id/textViewMoedas" android:layout_alignParentTop="true"
+                    android:text="@string/text_moedas"
+                    android:id="@+id/textViewMoedas"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true" android:gravity="center"/>
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView005"
                     android:layout_below="@+id/textViewMoedas"
-                    android:text="0,05"
+                    android:text="@string/text_005"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM005" android:layout_below="@+id/textViewMoedas"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM005"
+                    android:layout_below="@+id/textViewMoedas"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText005" android:layout_below="@+id/textViewMoedas"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText005"
+                    android:layout_below="@+id/textViewMoedas"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
-                    android:id="@+id/btnP005" android:layout_below="@+id/textViewMoedas"
-                    android:layout_toEndOf="@+id/editText005"/>
+                    android:text="@string/text_plus"
+                    android:id="@+id/btnP005"
+                    android:layout_below="@+id/textViewMoedas"
+                    android:layout_toEndOf="@+id/editText005"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView010"
                     android:layout_below="@+id/TextView005"
-                    android:text="0,10"
+                    android:text="@string/text_010"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM010" android:layout_below="@+id/TextView005"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM010"
+                    android:layout_below="@+id/TextView005"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText010" android:layout_below="@+id/TextView005"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText010"
+                    android:layout_below="@+id/TextView005"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
-                    android:id="@+id/btnP010" android:layout_below="@+id/TextView005"
-                    android:layout_toEndOf="@+id/editText005"/>
+                    android:text="@string/text_plus"
+                    android:id="@+id/btnP010"
+                    android:layout_below="@+id/TextView005"
+                    android:layout_toEndOf="@+id/editText005"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView025"
                     android:layout_below="@+id/TextView010"
-                    android:text="0,25"
+                    android:text="@string/text_025"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM025" android:layout_below="@+id/TextView010"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM025"
+                    android:layout_below="@+id/TextView010"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText025" android:layout_below="@+id/TextView010"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText025"
+                    android:layout_below="@+id/TextView010"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
-                    android:id="@+id/btnP025" android:layout_below="@+id/TextView010"
-                    android:layout_toEndOf="@+id/editText005"/>
+                    android:text="@string/text_plus"
+                    android:id="@+id/btnP025"
+                    android:layout_below="@+id/TextView010"
+                    android:layout_toEndOf="@+id/editText005"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView050"
                     android:layout_below="@+id/TextView025"
-                    android:text="0,50"
+                    android:text="@string/text_050"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM050" android:layout_below="@+id/TextView025"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM050"
+                    android:layout_below="@+id/TextView025"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText050" android:layout_below="@+id/TextView025"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText050"
+                    android:layout_below="@+id/TextView025"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
-                    android:id="@+id/btnP050" android:layout_below="@+id/TextView025"
-                    android:layout_toEndOf="@+id/editText005"/>
+                    android:text="@string/text_plus"
+                    android:id="@+id/btnP050"
+                    android:layout_below="@+id/TextView025"
+                    android:layout_toEndOf="@+id/editText005"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView100"
                     android:layout_below="@+id/TextView050"
-                    android:text="1,00"
+                    android:text="@string/text_100"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM100" android:layout_below="@+id/TextView050"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM100"
+                    android:layout_below="@+id/TextView050"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText100" android:layout_below="@+id/TextView050"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText100"
+                    android:layout_below="@+id/TextView050"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
+                    android:text="@string/text_plus"
                     android:id="@+id/btnP100"
-                    android:layout_toEndOf="@+id/editText005" android:layout_below="@+id/TextView050"/>
+                    android:layout_toEndOf="@+id/editText005"
+                    android:layout_below="@+id/TextView050"
+                    />
 
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Notas (R$)"
+                    android:text="@string/text_notas"
                     android:id="@+id/textViewNotas"
                     android:layout_below="@+id/TextView100"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView200"
                     android:layout_below="@+id/textViewNotas"
-                    android:text="2,00"
+                    android:text="@string/text_200"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM200" android:layout_below="@+id/textViewNotas"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM200"
+                    android:layout_below="@+id/textViewNotas"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText200" android:layout_below="@+id/textViewNotas"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText200"
+                    android:layout_below="@+id/textViewNotas"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
+                    android:text="@string/text_plus"
                     android:id="@+id/btnP200"
-                    android:layout_toEndOf="@+id/editText005" android:layout_below="@+id/textViewNotas"/>
+                    android:layout_toEndOf="@+id/editText005"
+                    android:layout_below="@+id/textViewNotas"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView500"
                     android:layout_below="@+id/TextView200"
-                    android:text="5,00"
+                    android:text="@string/text_500"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM500" android:layout_below="@+id/TextView200"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM500"
+                    android:layout_below="@+id/TextView200"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText500" android:layout_below="@+id/TextView200"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText500"
+                    android:layout_below="@+id/TextView200"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
-                    android:id="@+id/btnP500" android:layout_below="@+id/TextView200"
-                    android:layout_toEndOf="@+id/editText005"/>
+                    android:text="@string/text_plus"
+                    android:id="@+id/btnP500"
+                    android:layout_below="@+id/TextView200"
+                    android:layout_toEndOf="@+id/editText005"
+                    />
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TextView1000"
                     android:layout_below="@+id/TextView500"
-                    android:text="10,00"
+                    android:text="@string/text_1000"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:paddingTop="25dp"/>
+                    android:paddingTop="25dp"
+                    />
 
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:id="@+id/btnM1000" android:layout_below="@+id/TextView500"
-                    android:layout_toEndOf="@+id/TextView1000" android:singleLine="false"/>
+                    android:text="@string/text_minus"
+                    android:id="@+id/btnM1000"
+                    android:layout_below="@+id/TextView500"
+                    android:layout_toEndOf="@+id/TextView1000"
+                    android:singleLine="false"
+                    />
+
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText1000" android:layout_below="@+id/TextView500"
-                    android:layout_toEndOf="@+id/btnM005"/>
+                    android:id="@+id/editText1000"
+                    android:layout_below="@+id/TextView500"
+                    android:layout_toEndOf="@+id/btnM005"
+                    />
+
             <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
-                    android:id="@+id/btnP1000" android:layout_below="@+id/TextView500"
-                    android:layout_toEndOf="@+id/editText005"/>
+                    android:text="@string/text_plus"
+                    android:id="@+id/btnP1000"
+                    android:layout_below="@+id/TextView500"
+                    android:layout_toEndOf="@+id/editText005"
+                    />
 
         </RelativeLayout>
     </ScrollView>
+
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enviar"
-            android:id="@+id/button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            android:text="@string/btn_enviar"
+            android:id="@+id/buttonTrocoEnviar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
 </RelativeLayout>

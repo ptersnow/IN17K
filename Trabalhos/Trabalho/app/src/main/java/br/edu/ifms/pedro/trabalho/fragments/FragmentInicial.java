@@ -1,4 +1,4 @@
-package br.edu.ifms.pedro.trabalho;
+package br.edu.ifms.pedro.trabalho.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import br.edu.ifms.pedro.trabalho.R;
 
 /**
  * Created by Pedro on 10/06/2016.

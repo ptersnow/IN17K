@@ -1,3 +1,56 @@
 <resources>
     <string name="app_name">Trabalho</string>
+
+    <string name="text_enviar">Deseja enviar a solicitação?</string>
+
+    <string name="text_minus">-</string>
+    <string name="text_plus">+</string>
+    <string name="text_moedas">Moedas (R$)</string>
+    <string name="text_005">0,05</string>
+    <string name="text_010">0,10</string>
+    <string name="text_025">0,25</string>
+    <string name="text_050">0,50</string>
+    <string name="text_100">1,00</string>
+    <string name="text_notas">Notas (R$)</string>
+    <string name="text_200">2,00</string>
+    <string name="text_500">5,00</string>
+    <string name="text_1000">10,00</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="text_nome">Nome</string>
+    <string name="text_endereco">Endereço:</string>
+    <string name="text_uf">UF:</string>
+    <string name="text_email">E-mail:</string>
+    <string name="text_telefone">Telefone:</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+
+    <string-array name="uf_list">
+        <item>SELECIONE</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
 </resources>
