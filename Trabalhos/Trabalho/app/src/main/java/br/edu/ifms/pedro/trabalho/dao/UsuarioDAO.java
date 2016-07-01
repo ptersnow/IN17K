@@ -28,7 +28,7 @@ public class UsuarioDAO {
         sqliteDatabase.close();
     }
 
-    public Usuario createUsuario(Usuario usuario) {
+    public Long createUsuario(Usuario usuario) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("nome", usuario.getNome());
         contentValues.put("endereco", usuario.getEndereco());
@@ -36,10 +36,7 @@ public class UsuarioDAO {
         contentValues.put("uf", usuario.getUf());
         contentValues.put("email", usuario.getEmail());
 
-        Long id = sqliteDatabase.insert(SqliteHelper.TABLE_USUARIO, null, contentValues);
-        usuario.setId(id);
-
-        return usuario;
+        return sqliteDatabase.insert(SqliteHelper.TABLE_USUARIO, null, contentValues);
     }
 
     public void deleteUsuario(Usuario usuario) {
@@ -72,6 +69,4 @@ public class UsuarioDAO {
         cursor.close();
         return usuarioList;
     }
-
-
 }
